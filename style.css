@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Lilita+One&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');  
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins';
+    color: #000;
+}
+.header
+{
+    width:100%;
+    background-image: url(images/banner_image.png);
+    background-size: 50%;
+    background-position: right;
+    background-repeat: no-repeat;
+
+
+}
+
+:root{
+    --white-color:#fff;
+    --second-color:#000;
+    --prime-color:#ff4c30;
+    --pg-color:#817f91;
+    --transition03:all ease 0.3s;
+    --transition04:all ease 0.4s;
+    --transition05:all ease 0.5s;
+    
+}
+.section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 100px 8%;
+    gap: 50px;
+}
+
+button{
+    width: 100px;
+    height: 55px;
+    border: none;
+    cursor: pointer;
+    color: var(--white-color);
+    background-color: var(--prime-color);
+    font-weight: 500;
+    font-size: 15px;
+    box-shadow: 5px 5px 20px var(--prime-color);
+    position:relative;
+    overflow: hidden;
+}
+
+button:after
+{
+    content: '';
+    position: absolute;
+    height: 40px;
+    width:120px;
+    background-color: var(--white-color);
+    top: -20px;
+    left: -100%;
+    transform: rotate(-60deg);
+    filter: blur(10px);
+    transition: var(--transition05);
+}
+
+.section_title{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+
+.section_width{
+    width: 70%;
+}
+
+.ri-menu-2-line{
+    font-size: 25px;
+    font-weight: 600;
+    display: none;
+}
+.ri-close-large{
+    display: none;
+}
+
+nav{
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 8px 8%;
+    position: fixed;
+    background-color: #ffffff5d;
+    z-index: 99;
+    backdrop-filter: blur(10px);
+    border-bottom: 0.5px solid red;
+}
+
+nav .logo{
+    width: 150px;
+}
+nav .logo img{
+    width:100px;
+}
+nav ul{
+    display: flex;
+    gap :40px;
+}
+
+nav ul li a{
+    color: var(--second-color);
+    text-transform: uppercase;
+    position: relative;
+    font-weight: 500;
+}
+
+nav ul li a:after{
+    content: '';
+    position: absolute;
+    height: 2px;
+    top: 100%;
+    width:0%;
+    left:0%;
+    transition: var(--transition05);
+}
+
+nav ul li a:hover:after{
+    width: 100px;
+    colour:var(--prime-color);
+    background-color: var(--prime-color);
+}
+
+nav ul li a:hover{
+    color:var(--prime-color);
+}
