@@ -153,3 +153,35 @@ nav ul li a:hover{
     color: var(--second-color);
     border: 1px solid var(--second-color);
 }
+
+.heroWrapper{
+    flex-direction: row;
+    padding-top:300px;
+}
+
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: start;
+}
+
+.hero-content p{
+     padding:30px 0;
+     color: var(--pg-color);
+}
+span{
+    font-size: 22px;
+    font-weight: 700;
+}
+.hero-content h1{
+   font-size: 4rem;
+   line-height: 5rem;
+   margin-top: 20px;
+}
+
+.hero-content h1 span{
+    font-size: 4rem;
+    font-weight: 800;
+    color:var(--prime-color);
+}
